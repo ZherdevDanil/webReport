@@ -34,6 +34,11 @@ flex-grow: 1;}
     width: 60;
 }
 
+.kpi_icon{
+  height: 105px;
+  width: 60;
+}
+
 .labs {
     border-radius: 5px;
     display: flex;
