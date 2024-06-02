@@ -125,22 +125,6 @@ td {
 td:first-child {
   text-align: center;
 }
-/*
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.title p:first-child {
-  text-transform: uppercase;
-}
-
-.title p {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}*/
-
 
 .list-content h3 {
   font-family: "Montserrat", sans-serif;
@@ -158,4 +142,9 @@ h3 {
 
 .child{
   margin-left: 50px;
+}
+
+.lab4img{
+  height: 400px;
+  width: 900px;
 }
