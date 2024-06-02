@@ -1,54 +1,51 @@
-body{
-    background-color: #cfdfe8;
+body {
+  background-color: #cfdfe8;
 }
 
 .title {
-display: flex;
-align-items: center;
-margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .title p:first-child {
-text-transform: uppercase;
-margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .title p {
-text-align: center;
-font-family: "Montserrat", sans-serif;
-font-weight: 700;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .title span {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 .title-text {
-margin-left: auto;
-margin-right: auto;
-flex-grow: 1;}
-
-.my_photo{
-    height: 105px;
-    width: 60;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
 }
 
-.kpi_icon{
+.my_photo {
   height: 105px;
   width: 60;
 }
 
+
 .labs {
-    border-radius: 5px;
-    display: flex;
-    padding: 5px;
-    justify-content: space-around;
-    flex-basis: auto;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    padding: 15px 0;
-    margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  flex-basis: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 15px 0;
+  margin-bottom: 10px;
 }
 
 a:active,
@@ -59,8 +56,8 @@ a:hover {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .lab {
@@ -88,14 +85,15 @@ a {
 
 .list-item {
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 15px;
   flex: 2 1 auto;
   justify-content: center;
   align-items: center;
   display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  
+  padding: 5px;
+
 }
 
 .list-item:not(:last-child) {
@@ -105,7 +103,7 @@ a {
 
 .list-content {
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
   flex-grow: 1;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -113,6 +111,51 @@ a {
   height: 500px;
   padding: 10px 15px 0 15px;
   height: 950px;
-} 
+}
 
-  
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+td:first-child {
+  text-align: center;
+}
+/*
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.title p:first-child {
+  text-transform: uppercase;
+}
+
+.title p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}*/
+
+
+.list-content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.list-content h3:first-child {
+  margin-bottom: 10px;
+}
+
+.git {
+  text-decoration: underline;
+}
+
+.child{
+  margin-left: 50px;
+}

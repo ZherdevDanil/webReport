@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My new html page</title>
     <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+  </head>
+  <body>
     <header class="title">
-        <img class="kpi_icon" src="../images/kpi.png" alt="kpiIcon" />
+        <img class="kpi_icon" src="../images/kpi.jpeg" alt="kpiIcon" />
 
         <div class="title-text">
             <p>
@@ -23,13 +23,13 @@
     </header>
     <main>
         <div class="labs">
-          <a href="lab1/1lab.html" class="lab">Лабораторна робота №1</a>
-          <a href="#" class="lab">Лабораторна робота №2</a>
+          <a href="1lab.html" class="lab">Лабораторна робота №1</a>
+          <a href="../lab2/2lab.html" class="lab">Лабораторна робота №2</a>
           <a href="#" class="lab">Лабораторна робота №3</a>
           <a href="#" class="lab">Лабораторна робота №4</a>
           <a href="#" class="lab">Лабораторна робота №5</a>
           <a href="#" class="lab">Лабораторна робота №5.1</a>
-          <a href="№" class="lab">Лабораторна робота №6</a>
+          <a href="#" class="lab">Лабораторна робота №6</a>
           <a href="#" class="lab">Лабораторна робота №7</a>
           <a href="#" class="lab">Лабораторна робота №8</a>
           <a href="#" class="lab">Лабораторна робота №9</a>
@@ -47,4 +47,65 @@
           <a href="images.html" class="list-item">Зображення</a>
           <a href="conclusions.html" class="list-item">Висновки</a>
         </div>
-        <div class="list-content"></div>
+        <div class="list-content">
+          <h4>Таблиці :</h4>
+          <p class="elements">Елементи, які можуть або повинні використовуватись в таблицях:</p>
+
+          <table id="id">
+            <tr>
+              <th>Назва елементу</th>
+              <th style="text-align: center">Його значення</th>
+            </tr>
+            <tr>
+              <td>&ltcaption&gt</td>
+              <td colspan="4">
+                Тег визначає заголовок (назву) таблиці. Заголовок таблиці має розміщуватись відразу
+                після відкриваючого тега, тобто після &ltcaption&gt. Текст котрий знаходиться в
+                елементі &ltcaption&gt відображається перед таблицею і описує її зміст.
+              </td>
+            </tr>
+            <tr>
+              <td>&ltcolgroup&gt</td>
+              <td colspan="4">
+                Цей елемент дозволяє зменшити код таблиці за рахунок скорочення атрибутів, що
+                повторюються, і при його наявності браузер починає показувати вміст таблиці, не
+                чекаючи її повного завантаження.
+              </td>
+            </tr>
+            <tr>
+              <td>&ltthead&gt</td>
+              <td colspan="4">
+                Використовується для зберігання групи заголовків HTML-таблиці (верхній колонтитул),
+                котрі будуть відображені зверху таблиці.
+              </td>
+            </tr>
+            <tr>
+              <td>&lttbody&gt</td>
+              <td colspan="4">Визначає тіло HTML-таблиці.</td>
+            </tr>
+            <tr>
+              <td>&lttr&gt</td>
+              <td colspan="4">Призначений для створення одного рядка таблиці.</td>
+            </tr>
+            <tr>
+              <td>&lttd&gt</td>
+              <td colspan="4">
+                Призначений для створення однієї комірки таблиці (звичайну комірку з даними).
+              </td>
+            </tr>
+            <tr>
+              <td>&ltth&gt</td>
+              <td colspan="4">Призначений для створення однієї комірки-заголовка таблиці.</td>
+            </tr>
+            <tr>
+              <td>&lttfoot&gt</td>
+              <td colspan="4">
+                Використовується для групування підсумкових рядків в HTML-таблиці, котрі будуть
+                відображені внизу таблиці.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </body>
+</html>  
