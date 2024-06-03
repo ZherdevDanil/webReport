@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My new html page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="title">
+        <img class="kpi_icon" src="../images/kpi.jpeg" alt="kpiIcon" />
+
+        <div class="title-text">
+            <p>
+            Звіти з лабораторних робіт 
+            <br>
+            з дисципліни "WEB-орієнтовані технології."
+            <br>
+            Основи Frontend та Backend розробок</p>
+            <p>Студента групи ІО-15 Жердєва Данила</p>
+        </div>
+        <img class="my_photo" src="../images/photo1716148857.jpeg" alt="ZherdievD"/>
+    </header>
+    <main>
+        <div class="labs">
+            <a href="../lab1/1lab.html" class="lab">Лабораторна робота №1</a>
+            <a href="../lab2/2lab.html" class="lab">Лабораторна робота №2</a>
+            <a href="../lab3/3lab.html" class="lab">Лабораторна робота №3</a>
+            <a href="../lab4/4lab.html" class="lab">Лабораторна робота №4</a>
+            <a href="./5lab.html" class="lab">Лабораторна робота №5</a>
+            <a href="../lab5_1/5_1lab.html" class="lab">Лабораторна робота №5.1</a>
+            <a href="../lab6/6lab.html" class="lab">Лабораторна робота №6</a>
+            <a href="../lab7/7lab.html" class="lab">Лабораторна робота №7</a>
+            <a href="../lab8/8lab.html" class="lab">Лабораторна робота №8</a>
+            <a href="../lab9/9lab.html" class="lab">Лабораторна робота №9</a>
+        </div>
+        <div class="labs-content"></div>
+      </main>
+
+      <div class="labs-content">
+        <div class="list">
+          <a href="topic.html" class="list-item">Тема,мета місце розташування лаби</a>
+          <a href="js_functional.html" class="list-item">Способи функціонального застосування JavaScript</a>
+          <a href="./url_sch.html" class="list-item child">Схема URL</a>
+          <a href="./eventlisten.html" class="list-item child">Обробник подій</a>
+          <a href="./entity.html" class="list-item child">Підстановка(entity)</a>
+          <a href="./js_script.html" class="list-item child">Вставка(тег SCRIPT)</a>
+          <a href="./conclusions.html" class="list-item">Масиви(4 пункт)</a>
+          <a href="./conclusions.html" class="list-item">Вмконання 6 пункту</a>
+          <a href="./conclusions.html" class="list-item">Висновки</a>
+        </div>
+        <div class="list-content" style="height: 100%;">
+            <h2>Функціональне застосування JavaScript</h2>
+    <p>JavaScript — це мова програмування, яка широко використовується для додавання інтерактивності та динамічного поведінки до веб-сторінок. Він підтримує різні функціональні можливості, що дозволяють розробникам створювати складні та багатофункціональні веб-додатки.</p>
+
+    <h2>Способи функціонального застосування JavaScript</h2>
+
+    <strong>1. Маніпуляція DOM (Document Object Model)</strong>
+    <p>JavaScript дозволяє взаємодіяти з елементами HTML на сторінці, змінюючи їх структуру, стиль і зміст.</p>
+    <pre><code>
+    // Зміна тексту елемента з id "example"
+    document.getElementById("example").innerText = "Новий текст";
+    </code></pre>
+
+    <strong>2. Обробка подій</strong>
+    <p>JavaScript може реагувати на різні події, такі як кліки миші, натискання клавіш, завантаження сторінки тощо.</p>
+    <pre><code>
+    // Додавання обробника події кліку до кнопки
+    document.getElementById("myButton").addEventListener("click", function() {
+        alert("Кнопка натиснута!");
+    });
+    </code></pre>
+
+    <strong>3. Використання AJAX для асинхронних запитів</strong>
+    <p>AJAX (Asynchronous JavaScript and XML) дозволяє здійснювати асинхронні HTTP-запити до сервера без перезавантаження сторінки.</p>
+    <pre><code>
+    // Виконання AJAX-запиту до сервера
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.example.com/data", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            console.log(xhr.responseText);
+        }
+    };
+    xhr.send();
+    </code></pre>
+
+    <strong>4. Валідація форм</strong>
+    <p>JavaScript може використовуватися для перевірки даних, введених користувачем у форми, перед відправкою їх на сервер.</p>
+    <pre><code>
+    // Валідація форми перед відправкою
+    function validateForm() {
+        var name = document.forms["myForm"]["name"].value;
+        if (name == "") {
+            alert("Ім'я не може бути порожнім");
+            return false;
+        }
+    }
+    </code></pre>
+
+    <strong>5. Анімації та динамічні ефекти</strong>
+    <p>JavaScript разом з CSS може використовуватися для створення анімацій та динамічних ефектів на веб-сторінці.</p>
+    <pre><code>
+    // Приклад анімації зміни кольору елемента
+    document.getElementById("animate").style.transition = "background-color 2s";
+    document.getElementById("animate").style.backgroundColor = "blue";
+    </code></pre>
+
+    <strong>6. Використання бібліотек і фреймворків</strong>
+    <p>Існує багато бібліотек і фреймворків, таких як jQuery, React, Angular і Vue, які спрощують і розширюють функціональні можливості JavaScript.</p>
+    <pre><code>
+    // Приклад використання jQuery для зміни тексту елемента
+    $(document).ready(function() {
+        $("#example").text("Новий текст за допомогою jQuery");
+    });
+    </code></pre>
+
+    <strong>7. Виконання функцій за розкладом</strong>
+    <p>JavaScript дозволяє виконувати функції через певні інтервали часу або з затримкою.</p>
+    <pre><code>
+    // Виконання функції з затримкою в 2 секунди
+    setTimeout(function() {
+        alert("Це повідомлення з'явилося через 2 секунди");
+    }, 2000);
+
+    // Виконання функції кожні 3 секунди
+    setInterval(function() {
+        console.log("Це повідомлення з'являється кожні 3 секунди");
+    }, 3000);
+    </code></pre>
+        </div>
+
+</body>
+</html>

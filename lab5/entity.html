@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My new html page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="title">
+        <img class="kpi_icon" src="../images/kpi.jpeg" alt="kpiIcon" />
+
+        <div class="title-text">
+            <p>
+                Звіти з лабораторних робіт
+                <br>
+                з дисципліни "WEB-орієнтовані технології."
+                <br>
+                Основи Frontend та Backend розробок
+            </p>
+            <p>Студента групи ІО-15 Жердєва Данила</p>
+        </div>
+        <img class="my_photo" src="../images/photo1716148857.jpeg" alt="ZherdievD" />
+    </header>
+    <main>
+        <div class="labs">
+            <a href="../lab1/1lab.html" class="lab">Лабораторна робота №1</a>
+          <a href="../lab2/2lab.html" class="lab">Лабораторна робота №2</a>
+          <a href="../lab3/3lab.html" class="lab">Лабораторна робота №3</a>
+          <a href="../lab4/4lab.html" class="lab">Лабораторна робота №4</a>
+          <a href="./5lab.html" class="lab">Лабораторна робота №5</a>
+          <a href="../lab5_1/5_1lab.html" class="lab">Лабораторна робота №5.1</a>
+          <a href="../lab6/6lab.html" class="lab">Лабораторна робота №6</a>
+          <a href="../lab7/7lab.html" class="lab">Лабораторна робота №7</a>
+          <a href="../lab8/8lab.html" class="lab">Лабораторна робота №8</a>
+          <a href="../lab9/9lab.html" class="lab">Лабораторна робота №9</a>
+        </div>
+        <div class="labs-content"></div>
+    </main>
+
+    <div class="labs-content">
+        <div class="list">
+            <a href="topic.html" class="list-item">Тема,мета місце розташування лаби</a>
+            <a href="js_functional.html" class="list-item">Способи функціонального застосування JavaScript</a>
+            <a href="./url_sch.html" class="list-item child">Схема URL</a>
+            <a href="./test2.html" class="list-item child">Обробник подій</a>
+            <a href="./entity.html" class="list-item child">Підстановка(entity)</a>
+            <a href="./js_script.html" class="list-item child">Вставка(тег SCRIPT)</a>
+            <a href="./conclusions.html" class="list-item">Масиви(4 пункт)</a>
+            <a href="./conclusions.html" class="list-item">Вмконання 6 пункту</a>
+            <a href="./conclusions.html" class="list-item">Висновки</a>
+        </div>
+        <div class="list-content" style="height: 100%;">
+            <h2>Підстановка в JavaScript</h2>
+            <p>Підстановка в JavaScript - це процес заміни одного виразу або значення на інше. Це важливий механізм для
+                створення динамічних шаблонів або вставки змінних значень у рядки.</p>
+            <p>Наприклад, ви можете використовувати підстановку для створення рядка, який містить значення змінних. Це
+                зручно для форматування тексту або відображення динамічної інформації.</p>
+
+            <h2>Приклад підстановки в JavaScript</h2>
+            <pre><code>
+                <pre><code>
+    let city = 'Київ';
+    let temperature = 25;
+
+    // Використання підстановки для створення рядка зі значеннями змінних
+    let weatherReport = `Сьогодні в ${city} температура становить ${temperature} градусів.`;
+
+    console.log(weatherReport); // виведе "Сьогодні в Київ температура становить 25 градусів."
+    </code></pre>
+                
+                    <p>У цьому прикладі підстановка використовується для вставки значень змінних <code>city</code> та <code>temperature</code> у рядок <code>weatherReport</code>. В результаті ми отримуємо рядок, який містить конкретні значення змінних.</p>
+                
+
+            <h2>Розширене використання підстановки</h2>
+            <p>Підстановка в JavaScript також дозволяє виконувати вирази всередині шаблонних рядків. Це може бути
+                корисним для виконання обчислень або виклику функцій безпосередньо в рядку.</p>
+            <pre><code>
+    let product = 'яблука';
+    let price = 10;
+    let quantity = 5;
+
+    // Використання підстановки для виконання обчислень всередині шаблонного рядка
+    let total = `Загальна вартість ${quantity} ${product} становить ${price * quantity} гривень.`;
+
+    console.log(total); // виведе "Загальна вартість 5 яблук становить 50 гривень."
+    </code></pre>
+
+            <h2>Підстановка з функціями</h2>
+            <p>Ви можете використовувати функції всередині шаблонних рядків для динамічного формування тексту.</p>
+            <pre><code>
+    function greet(name) {
+        return `Привіт, ${name}!`;
+    }
+
+    let userName = 'Олена';
+
+    // Використання функції всередині шаблонного рядка
+    let greeting = `${greet(userName)}`;
+
+    console.log(greeting); // виведе "Привіт, Олена!"
+    </code></pre>
+        </div>
+
+</body>
+
+</html>
