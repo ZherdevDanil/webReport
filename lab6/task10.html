@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My new html page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="title">
+        <img class="kpi_icon" src="../images/kpi.jpeg" alt="kpiIcon" />
+
+        <div class="title-text">
+            <p>
+            Звіти з лабораторних робіт 
+            <br>
+            з дисципліни "WEB-орієнтовані технології."
+            <br>
+            Основи Frontend та Backend розробок</p>
+            <p>Студента групи ІО-15 Жердєва Данила</p>
+        </div>
+        <img class="my_photo" src="../images/photo1716148857.jpeg" alt="ZherdievD"/>
+    </header>
+    <main>
+        <div class="labs">
+          <a href="../lab1/1lab.html" class="lab">Лабораторна робота №1</a>
+          <a href="../lab2/2lab.html" class="lab">Лабораторна робота №2</a>
+          <a href="../lab3/3lab.html" class="lab">Лабораторна робота №3</a>
+          <a href="../lab4/4lab.html" class="lab">Лабораторна робота №4</a>
+          <a href="../lab5/5lab.html" class="lab">Лабораторна робота №5</a>
+          <a href="../lab5/5lab.html" class="lab">Лабораторна робота №5.1</a>
+          <a href="./6lab.html" class="lab">Лабораторна робота №6</a>
+          <a href="../lab7/7lab.html" class="lab">Лабораторна робота №7</a>
+          <a href="../lab8/8lab.html" class="lab">Лабораторна робота №8</a>
+          <a href="../lab9/9lab.html" class="lab">Лабораторна робота №9</a>
+        </div>
+        <div class="labs-content"></div>
+      </main>
+
+      <div class="labs-content">
+        <div class="list">
+          <a href="./topic.html" class="list-item">Тема,мета місце розташування лаби</a>
+          <a href="./task1.html" class="list-item">Завдання 1</a>
+          <a href="./task3.html" class="list-item">Завдання 3</a>
+          <a href="./task5.html" class="list-item">Завдання 5</a>
+          <a href="./task7.html" class="list-item">Завдання 7</a>
+          <a href="./task8.html" class="list-item">Завдання 8</a>
+          <a href="./task9.html" class="list-item">Завдання 9</a>
+          <a href="./task10.html" class="list-item">Завдання 10</a>
+          <a href="./conclusions.html" class="list-item">Висновки</a>
+        </div>
+        <div class="list-content" style="height: 100%;">
+            <h3>Завдання 10</h3>
+            <br>
+            <img src="../images/lab6/task10_1.JPG">
+            <br>
+            <img src="../images/lab6/task10_1_1.JPG">
+            <br>
+            <strong>Код:</strong>
+            <br>
+            <img src="../images/lab6/task10_2.JPG">
+            <br><br>
+            <strong>Результат виконання</strong>
+  
+            <div id="controls">
+              <input type="number" min="1" max="100" step="1" />
+              <button type="button" data-create>Створити</button>
+              <button type="button" data-destroy>Очистити</button>
+            </div>
+            <br><br><br>
+            
+            <div id="boxes"></div>
+            <br>
+        </div>
+        <script>
+            function getRandomHexColor() {
+            return `#${Math.floor(Math.random() * 16777215)
+              .toString(16)
+              .padStart(6, 0)}`;
+          }
+          
+          function createBoxes(amount) {
+            const boxesContainer = document.querySelector('#boxes');
+            boxesContainer.innerHTML = '';
+          
+            for (let i = 0; i < amount; i++) {
+              const box = document.createElement('div');
+              box.style.width = `${30 + i * 10}px`;
+              box.style.height = `${30 + i * 10}px`;
+              box.style.backgroundColor = getRandomHexColor();
+              boxesContainer.appendChild(box);
+            }
+          }
+          
+          function destroyBoxes() {
+            document.querySelector('#boxes').innerHTML = '';
+          }
+          
+          document.querySelector('[data-create]').addEventListener('click', function() {
+            const input = document.querySelector('input[type="number"]');
+            const amount = input.value;
+          
+            if (amount < 1 || amount > 100) {
+              alert('Введіть число від 1 до 100');
+              return;
+            }
+          
+            createBoxes(amount);
+            input.value = '';
+          });
+          
+          document.querySelector('[data-destroy]').addEventListener('click', destroyBoxes);
+        </script>
+
+</body>
+</html>
